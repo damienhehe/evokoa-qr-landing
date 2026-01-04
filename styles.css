@@ -71,7 +71,7 @@ body::before {
     z-index: 1;
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-3xl) var(--spacing-lg);
+    padding: var(--spacing-xl) var(--spacing-lg);
     animation: fadeIn 0.8s ease-out;
 }
 
@@ -90,7 +90,7 @@ body::before {
 /* Header Styles */
 .header {
     text-align: center;
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-xl);
     animation: slideDown 0.8s ease-out;
 }
 
@@ -107,9 +107,9 @@ body::before {
 }
 
 .logo {
-    height: 40px;
+    height: 32px;
     width: auto;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -117,15 +117,15 @@ body::before {
 
 .title {
     font-family: var(--font-serif);
-    font-size: clamp(48px, 8vw, 72px);
+    font-size: clamp(36px, 6vw, 56px);
     font-weight: 400;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     letter-spacing: -0.02em;
     line-height: 1.1;
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
@@ -136,13 +136,13 @@ body::before {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-xl);
 }
 
 .founder-card {
     background-color: var(--bg-card);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg);
     border: 1px solid var(--border-subtle);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     animation: slideUp 0.8s ease-out backwards;
@@ -232,6 +232,15 @@ body::before {
     margin-top: 6px;
 }
 
+.note-below-card {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-top: calc(-1 * var(--spacing-md));
+    margin-bottom: var(--spacing-lg);
+}
+
 .button-group {
     display: flex;
     gap: var(--spacing-sm);
@@ -288,8 +297,8 @@ body::before {
 /* Learn More Section */
 .learn-more-section {
     text-align: center;
-    margin: var(--spacing-3xl) 0;
-    padding: var(--spacing-2xl) var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) var(--spacing-lg);
     animation: fadeIn 1s ease-out 0.5s backwards;
 }
 
@@ -334,7 +343,7 @@ body::before {
 /* Footer Styles */
 .footer {
     text-align: center;
-    padding-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
 }
 
 .divider {
