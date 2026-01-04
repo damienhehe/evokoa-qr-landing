@@ -222,34 +222,62 @@ body::before {
     font-size: 14px;
     color: var(--text-secondary);
     font-weight: 500;
+    margin-bottom: 4px;
 }
 
-.contact-button {
+.founder-note {
+    font-size: 13px;
+    color: var(--accent-green);
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.button-group {
+    display: flex;
+    gap: var(--spacing-sm);
+    width: 100%;
+}
+
+.contact-button-half {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-sm);
-    width: 100%;
-    padding: var(--spacing-md) var(--spacing-lg);
+    gap: var(--spacing-xs);
+    flex: 1;
+    padding: var(--spacing-md);
     background-color: var(--accent-green);
     color: white;
     text-decoration: none;
     border-radius: var(--radius-sm);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     transition: all 0.2s ease;
     border: none;
     cursor: pointer;
 }
 
-.contact-button:hover {
+.contact-button-half:hover {
     background-color: var(--accent-green-hover);
     transform: scale(1.02);
     box-shadow: 0 4px 12px rgba(80, 200, 120, 0.3);
 }
 
-.contact-button:active {
+.contact-button-half:active {
     transform: scale(0.98);
+}
+
+.contact-button-half.whatsapp {
+    background-color: #25D366;
+}
+
+.contact-button-half.whatsapp:hover {
+    background-color: #20BA5A;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.contact-button-half .icon {
+    width: 18px;
+    height: 18px;
 }
 
 .icon {
