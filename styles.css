@@ -206,6 +206,7 @@ body::before {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.5px;
+    display: none;
 }
 
 .founder-info {
@@ -308,8 +309,8 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     background-color: var(--bg-card);
     color: var(--text-primary);
     text-decoration: none;
@@ -326,8 +327,8 @@ body::before {
 }
 
 .social-link .icon {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
 }
 
 .company-info {
