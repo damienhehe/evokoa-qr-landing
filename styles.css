@@ -194,7 +194,7 @@ body::before {
     height: 64px;
     border-radius: var(--radius-full);
     background: linear-gradient(135deg, var(--accent-green) 0%, #3da35d 100%);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
@@ -259,6 +259,52 @@ body::before {
 .icon {
     width: 20px;
     height: 20px;
+}
+
+/* Learn More Section */
+.learn-more-section {
+    text-align: center;
+    margin: var(--spacing-3xl) 0;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    animation: fadeIn 1s ease-out 0.5s backwards;
+}
+
+.learn-more-text {
+    font-size: 20px;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 500;
+}
+
+.learn-more-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-xl);
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid var(--border-subtle);
+    transition: all 0.3s ease;
+}
+
+.learn-more-button:hover {
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(80, 200, 120, 0.2);
+}
+
+.learn-more-button .icon {
+    transition: transform 0.3s ease;
+}
+
+.learn-more-button:hover .icon {
+    transform: translateX(4px);
 }
 
 /* Footer Styles */
