@@ -426,28 +426,151 @@ body::before {
     }
 
     .container {
-        padding: var(--spacing-xl) var(--spacing-md);
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .header {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .logo {
+        height: 24px;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .title {
+        font-size: clamp(28px, 8vw, 40px);
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .subtitle {
+        font-size: 14px;
+        padding: 0 var(--spacing-sm);
     }
 
     .founders-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
     }
 
     .founder-card {
         padding: var(--spacing-lg);
     }
 
-    .title {
-        font-size: 48px;
+    .founder-header {
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
     }
 
-    .subtitle {
+    .founder-name {
+        font-size: 20px;
+    }
+
+    .founder-role {
+        font-size: 13px;
+    }
+
+    .note-below-dale {
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: var(--spacing-xs);
+        margin-bottom: var(--spacing-md);
+        padding: 0 var(--spacing-sm);
+    }
+
+    .button-group {
+        gap: var(--spacing-xs);
+    }
+
+    .contact-button-half {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 13px;
+    }
+
+    .contact-button-half .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .learn-more-section {
+        margin: var(--spacing-lg) 0;
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .learn-more-text {
+        font-size: 18px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .learn-more-button {
+        padding: var(--spacing-sm) var(--spacing-lg);
         font-size: 16px;
+    }
+
+    .footer {
+        padding-top: var(--spacing-sm);
+    }
+
+    .divider {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .email-link {
+        padding: var(--spacing-xs) var(--spacing-md);
+        font-size: 14px;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .social-links {
+        gap: var(--spacing-xs);
+        margin: var(--spacing-xs) 0;
+        flex-wrap: wrap;
+    }
+
+    .social-link {
+        width: 56px;
+        height: 56px;
+    }
+
+    .social-link .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .company-info {
+        font-size: 12px;
+        margin-top: var(--spacing-sm);
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .logo {
+        height: 22px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .founder-card {
+        padding: var(--spacing-md);
+    }
+
+    .founder-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
     .avatar {
         width: 56px;
         height: 56px;
@@ -458,11 +581,48 @@ body::before {
     }
 
     .founder-name {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .founder-role {
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .contact-button-half {
+        width: 100%;
+        padding: var(--spacing-md);
+        font-size: 14px;
+    }
+
+    .learn-more-text {
+        font-size: 16px;
+    }
+
+    .learn-more-button {
+        width: 100%;
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 15px;
+    }
+
+    .email-link {
+        width: 100%;
+        justify-content: center;
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .social-link {
+        width: 48px;
+        height: 48px;
+    }
+
+    .social-link .icon {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -712,23 +872,99 @@ body::before {
 @media (max-width: 768px) {
     .modal-overlay {
         padding: var(--spacing-md);
+        align-items: flex-end;
     }
 
     .modal-content {
         padding: var(--spacing-lg);
+        max-width: 100%;
+        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-close {
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+        width: 36px;
+        height: 36px;
+        font-size: 28px;
+    }
+
+    .modal-header {
+        padding-right: var(--spacing-lg);
+        margin-bottom: var(--spacing-lg);
     }
 
     .modal-title {
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .modal-subtitle {
+        font-size: 14px;
+    }
+
+    .modal-body {
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
     }
 
     .contact-detail {
         grid-template-columns: auto 1fr;
         gap: var(--spacing-xs);
+        padding: var(--spacing-sm);
+    }
+
+    .contact-value {
+        font-size: 15px;
     }
 
     .copy-btn {
         grid-column: 1 / -1;
         justify-content: center;
+        width: 100%;
+        margin-top: var(--spacing-xs);
+    }
+
+    .modal-footer {
+        padding-top: var(--spacing-sm);
+    }
+
+    .modal-download-btn {
+        width: 100%;
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-overlay {
+        padding: 0;
+    }
+
+    .modal-content {
+        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        padding: var(--spacing-md);
+        max-height: 95vh;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+
+    .modal-subtitle {
+        font-size: 13px;
+    }
+
+    .contact-detail {
+        padding: var(--spacing-xs);
+    }
+
+    .contact-label {
+        font-size: 12px;
+    }
+
+    .contact-value {
+        font-size: 14px;
     }
 }
